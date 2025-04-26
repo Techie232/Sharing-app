@@ -5,6 +5,8 @@ const routes = require('./routes/route');
 const dbConn = require('./db/dbConn');
 require('dotenv').config();
 
+const port = process.env.PORT || 3000;
+
 app.use(express.json());
 app.use(cors());
 
@@ -18,4 +20,4 @@ app.get('/', (req, res) => {
    })
 })
 
-app.listen(3000);
+app.listen(port);
