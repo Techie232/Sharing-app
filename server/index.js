@@ -7,8 +7,15 @@ require('dotenv').config();
 
 const port = process.env.PORT || 3000;
 
+const allowedOrigins = [
+   'https://sharing-app-qm2u.vercel.app/'
+]
+
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+   origin: allowedOrigins,
+   credentials : true
+}));
 
 dbConn();
 
