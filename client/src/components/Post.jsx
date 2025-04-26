@@ -38,12 +38,13 @@ const Post = () => {
 
    const createPost = async () => {
       try {
+         const toastId = toast.loading('Loading...');
          await axios.post(`${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}/create`, {
             routeParam: postName,
             description: userInput,
             expiryTime
          });
-
+         // toast.dismiss(toastId);
          toast.success("Clip Created Successfully");
          navigate('/success');
 
