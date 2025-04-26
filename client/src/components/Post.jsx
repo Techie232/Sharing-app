@@ -44,7 +44,7 @@ const Post = () => {
             description: userInput,
             expiryTime
          });
-         // toast.dismiss(toastId);
+         toast.dismiss(toastId);
          toast.success("Clip Created Successfully");
          navigate('/success');
 
