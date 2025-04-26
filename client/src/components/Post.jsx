@@ -38,7 +38,7 @@ const Post = () => {
 
    const createPost = async () => {
       try {
-         await axios.post('http://localhost:3000/create', {
+         await axios.post(`${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}/create`, {
             routeParam: postName,
             description: userInput,
             expiryTime
@@ -55,7 +55,7 @@ const Post = () => {
    const fetchPost = async () => {
       setLoading(true);
       try {
-         const response = await axios.get(`http://localhost:3000/get?routeParam=${postName}`)
+         const response = await axios.get(`${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}/get?routeParam=${postName}`)
          setText(response?.data?.data?.content);
          setLoading(false);
       } catch (error) {
