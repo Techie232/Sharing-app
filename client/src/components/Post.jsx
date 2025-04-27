@@ -83,7 +83,7 @@ const Post = () => {
    }, [])
 
    return (
-      <div className='w-[95%] h-[90%] mx-auto mt-2'>
+      <div className='w-[95%] h-[88%] mx-auto mt-2'>
          <div className='flex justify-center gap-5 w-full'>
             <div className='w-[50%]'>
                <Link className='w-[30%] text-xl font-thin hover:text-orange-800' to={'/'}>Back</Link>

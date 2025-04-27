@@ -20,7 +20,7 @@ const Home = () => {
    }
 
    return (
-      <div className='h-[92%] w-full grid place-items-center bg-gradient-to-r from-blue-500 via-teal-500 to-green-500'>
+      <div className='h-[88%] w-full grid place-items-center bg-gradient-to-r from-blue-500 via-teal-500 to-green-500'>
          <div className='w-full h-full grid place-items-center'>
             <div className='text-2xl font-serif animate-bounce'>Welcome to Sharer App!</div>
 

@@ -18,6 +18,9 @@ const App = () => {
             <Route path='/success' element={<Success />} />
          </Routes>
          <Toaster />
+         <div className='flex justify-center bg-slate-400 h-[4%]'>
+            <div className='font-mono text-center  w-[20%] rounded-md'>Made by M. Sameem</div>
+         </div>
       </div>
    )
 }

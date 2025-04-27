@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const Success = () => {
    return (
-      <div className='w-[90%] h-[90%] flex flex-col justify-evenly items-center text-4xl font-extralight text-green-800'>
+      <div className='w-[90%] h-[88%] flex flex-col justify-evenly items-center text-4xl font-extralight text-green-800'>
 
          <Link
             className='text-[#1ac0de]'
